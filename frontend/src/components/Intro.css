@@ -67,10 +67,9 @@
 }
 
 .intro-line span.split-parent {
-  font-family: var(--font-heading, 'Playfair Display', serif);
-  font-size: clamp(1.3rem, 4vw, 2.2rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   color: var(--text-muted, #6b5344);
-  letter-spacing: 2px;
 }
 
 .intro-names span.split-parent {
