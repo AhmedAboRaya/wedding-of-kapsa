@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #fdeed7;
+  --bg-edge: #d9c8b8;
+  --primary: #8c6a5d;
+  --accent: #a0785a;
+  --gold: #9c7048;
+  --text: #3d2b1f;
+  --text-muted: #6b5344;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lato', 'Segoe UI', sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, var(--bg-edge), var(--bg) 25%, var(--bg) 75%, var(--bg-edge));
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-edge);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 106, 93, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 106, 93, 0.6);
+}
+
+/* ScrollStack card inner content */
+.stack-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(140, 106, 93, 0.15);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(140, 106, 93, 0.08);
+}
+
+.stack-card-image {
+  padding: 0;
+  overflow: hidden;
+  min-height: auto;
+}
+
+.stack-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+}
+
+/* App reveal animation */
+.app-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.app-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: appReveal 1.2s ease-out;
+}
+
+@keyframes appReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
