@@ -1,4 +1,5 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
+// @ts-ignore
 import SplitText from './SplitText';
 import './Intro.css';
 
