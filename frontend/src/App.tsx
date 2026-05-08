@@ -3,7 +3,7 @@ import './index.css';
 import Intro from './components/Intro';
 import Hero from './components/Hero';
 import Countdown from './components/Countdown';
-import ScrollStack from './components/ScrollStack';
+import ScrollStack, { ScrollStackItem } from './components/ScrollStack';
 import CommentsSection from './components/CommentsSection';
 import LocationSection from './components/LocationSection';
 
@@ -27,11 +27,13 @@ function App() {
         <Hero />
         <Countdown />
 
-        <ScrollStack>
+        <ScrollStack useWindowScroll={true}>
           {scrollImages.map((src, i) => (
-            <div className="stack-card stack-card-image" key={i}>
-              <img src={src} alt={`Wedding moment ${i + 1}`} loading="lazy" />
-            </div>
+            <ScrollStackItem key={i}>
+              <div className="stack-card stack-card-image">
+                <img src={src} alt={`Wedding moment ${i + 1}`} loading="lazy" />
+              </div>
+            </ScrollStackItem>
           ))}
         </ScrollStack>
 
