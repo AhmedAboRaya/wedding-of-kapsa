@@ -69,11 +69,9 @@
 
 .hero-subtitle {
   font-family: var(--font-body);
-  font-size: 1rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-names {
@@ -117,8 +115,7 @@
 
 .hero-date p {
   font-family: var(--font-body);
-  font-size: 1.3rem;
-  letter-spacing: 6px;
+  font-size: 1.8rem;
   color: var(--gold);
 }
 
@@ -130,11 +127,11 @@
 
 .hero-tagline {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   color: var(--text-muted);
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .scroll-hint {

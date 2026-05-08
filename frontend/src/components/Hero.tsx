@@ -25,7 +25,7 @@ export default function Hero() {
         <p className="hero-subtitle">You are invited to the wedding of</p>
         <h1 className="hero-names">
           <span className="name-groom">AbdUlrahman</span>
-          <span className="ampersand">&</span>
+          <div className="ampersand ">&</div>
           <span className="name-bride">Hager</span>
         </h1>
         <div className="hero-date">

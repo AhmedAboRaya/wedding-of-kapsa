@@ -27,7 +27,7 @@
   font-family: var(--font-body);
   color: var(--text-muted);
   margin-bottom: 2.5rem;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
 .location-btn {
@@ -63,7 +63,6 @@
 
 .location-footer p {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
-  letter-spacing: 1px;
 }
