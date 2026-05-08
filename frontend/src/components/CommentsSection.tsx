@@ -2,7 +2,7 @@ import { useState, useEffect, type FormEvent } from 'react';
 import axios from 'axios';
 import './CommentsSection.css';
 
-const API_URL = 'http://localhost:5000/api/comments';
+const API_URL = 'https://wedding-of-kapsa-back.vercel.app/api/comments';
 
 interface Comment {
   name: string;
