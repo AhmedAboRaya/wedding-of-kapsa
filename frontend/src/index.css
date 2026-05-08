@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,7 +10,8 @@
   --text: #3d2b1f;
   --text-muted: #6b5344;
   --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Lato', 'Segoe UI', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-script: 'Great Vibes', cursive;
 }
 
 *, *::before, *::after {

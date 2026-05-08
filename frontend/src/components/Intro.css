@@ -74,10 +74,12 @@
 }
 
 .intro-names span.split-parent {
-  font-size: clamp(2.2rem, 7vw, 4.5rem) !important;
+  font-family: var(--font-script, cursive) !important;
+  font-size: clamp(3rem, 10vw, 6rem) !important;
   color: var(--text, #3d2b1f) !important;
-  text-shadow: 0 2px 20px rgba(156, 112, 72, 0.15);
-  letter-spacing: 3px;
+  text-shadow: 0 2px 20px rgba(156, 112, 72, 0.1);
+  letter-spacing: normal;
+  font-weight: 400;
 }
 
 /* Ensure GSAP split chars are inline */

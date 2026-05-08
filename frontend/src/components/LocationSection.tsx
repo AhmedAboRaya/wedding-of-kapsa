@@ -1,6 +1,6 @@
 import './LocationSection.css';
 
-const GOOGLE_MAPS_URL = 'https://share.google/rIEA1IULRxvdbo8Bb';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/7QdZBdSaEqZdkHKW9?g_st=ipc';
 
 export default function LocationSection() {
   return (
